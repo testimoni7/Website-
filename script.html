@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <header>
+
+        <nav>
+            <a href="#" class="active"> Home</a>
+            <a href="./script.html" >Script</a>
+        </nav>
+    </header>
+    
+<div class="container">
+
+   <h1 class="heading">New</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="image">
+            <img src="./images (1).jpeg" alt="blox fruit">
+         </div>
+         <div class="content">
+            <h3>[ RISE HUB ]</h3>
+            <p>BLOX FRUITS &#8211; AUTO FARM | SUPER FAST ATTACK | SMOOTH (1 HIT | EZ BOSS)</p>
+            <a href="./risehub.html" class="btnn">read more</a>
+         </div>
+      </div>
+      </div>
+   </div>
+</div>
+            <div class="social-icons">
+                <a href="https://whatsapp.com/channel/0029ValDJYfBVJlC4YOujf3N"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <a href="#" class="btn">Arceus X</a>
+<script>
+let loadMoreBtn = document.querySelector('#load-more');
+let currentItem = 2;
+
+loadMoreBtn.onclick = () =>{
+   let boxes = [...document.querySelectorAll('.container .box-container .box')];
+   for (var i = currentItem; i < currentItem + 2; i++){
+      boxes[i].style.display = 'inline-block';
+   }
+   currentItem += 2;
+
+   if(currentItem >= boxes.length){
+      loadMoreBtn.style.display = 'none';
+   }
+}
+
+</script>
+</body>
+</html>

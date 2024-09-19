@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.cool-text {
+    color: #1e90ff; /* Bright blue color */
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); /* Darker shadow for better readability */
+    margin-bottom: 20px;
+}
+
+.features-container {
+    color: #dcdcdc; /* Light gray text */
+    background-color: #2c2c2c; /* Dark background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+.features-container strong {
+    color: #ffffff; /* White color for the bold text */
+}
+
+.features-container h4 {
+    color: #ffa500; /* Dark orange for headings */
+}
+
+.script-container {
+    margin-top: 20px;
+}
+
+pre {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    white-space: pre-wrap; /* Preserve whitespace for code display */
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #ff0000; /* Red button */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #cc0000; /* Darker red */
+}
